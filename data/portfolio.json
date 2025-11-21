@@ -2,19 +2,19 @@
     {
         "image": "image1.png",
         "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Site permettant de rechercher et réserver des hébergements dans différentes villes.Projet réalisé en HTML/CSS avec une mise en page responsive.",
+        "link": "https://anassadd.github.io/booki/"
     },
     {
         "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "title": "site-Riding-Citites",
+        "text": "Application qui met en avant les cités et lieux emblématiques à travers une interface moderne. Développement centré sur l'intégration et l’optimisation.",
+        "link": "https://anassadd.github.io/site-Riding-Citites/"
     },
     {
         "image": "image3.png",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Plateforme de location d’appartements entièrement développée en React. Gestion des composants, du routing, et du responsive design.",
+        "link": "https://anassadd.github.io/kasa/"
     }
 ]

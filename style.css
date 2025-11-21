@@ -1,42 +1,157 @@
-/******* GENERAL *******/
-/* spacing on all sections */
+/* ========================================
+   VARIABLES CSS - Couleurs & Styles
+======================================== */
+:root {
+    --primary-color: #3b82f6;  /* Bleu moderne (change si tu veux) */
+    --primary-dark: #2563eb;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   GENERAL
+======================================== */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Espacement des sections */
 #about,
 #skills,
 #portfolio,
 #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
+
 #about h2,
 #skills h2,
 #portfolio h2,
 #contact h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    position: relative;
+    display: inline-block;
 }
+
+/* Ligne décorative sous les titres */
+#about h2::after,
+#skills h2::after,
+#portfolio h2::after,
+#contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    border-radius: 2px;
+}
+
 #contact {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
-/* display background dark color on navbar scroll */
+/* ========================================
+   NAVBAR - Style moderne avec glassmorphism
+======================================== */
+.navbar {
+    transition: var(--transition);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff !important;
+    transition: var(--transition);
+}
+
+.navbar-brand:hover {
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Navbar au scroll - effet glassmorphism */
 .navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+    padding: 0.5rem 0;
 }
 
-/* hero background image */
+/* ========================================
+   HERO SECTION - Bannière d'accueil
+======================================== */
 .bgimage {
     height: 100vh;
     max-height: 900px;
     background: url("images/image1.jpg");
     background-size: cover;
+    background-position: center;
     position: relative;
 }
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
+
+/* Overlay sombre pour améliorer la lisibilité */
+.bgimage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
-.hero_desc {
-    font-size: 2rem;
-}
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -44,56 +159,285 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 1;
+    animation: fadeInUp 1s ease;
 }
 
-/* about */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero_title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive hero */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2.5rem;
+    }
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
 .imageAboutPage {
     width: 100%;
+    max-width: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+    display: block;
+    margin: 0 auto;
 }
 
-/* skills */
-.skillsText.card {
-    height: 350px;
-    cursor: pointer;
+.imageAboutPage:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl);
 }
+
+#about p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+#about ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ========================================
+   SKILLS SECTION - Cartes de compétences
+======================================== */
+.skillsText.card {
+    height: 380px;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    background: #fff;
+    overflow: hidden;
+}
+
+.skillsText.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.skillsText .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .skillsText img {
     width: 100%;
-    height: 150px;
+    height: 120px;
     object-fit: contain;
-}
-#skills p {
-    text-align: center;
-}
-.skillsIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #008000;
-}
-.skillsText:hover {
-    border: 1px solid #008000;
+    transition: var(--transition);
 }
 
-/* portfolio */
+.skillsText:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+}
+
+#skills p {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.skillsIcon {
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.card:hover .skillsIcon {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* ========================================
+   PORTFOLIO SECTION - Projets
+======================================== */
+.portfolioContent {
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    background: #fff;
+}
+
+.portfolioContent:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.portfolioContent .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.portfolioContent:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.portfolioContent .card-body {
+    padding: 1.5rem;
+}
+
+.portfolioContent .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.portfolioContent .card-text {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.portfolioContent .btn {
+    background: var(--primary-color);
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.portfolioContent .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 #portfolio p {
     text-align: center;
 }
 
-/* contact */
+/* ========================================
+   CONTACT SECTION
+======================================== */
 .contactColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contactColumn i {
-    color: #198754;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
 }
 
-/* footer */
+.contactColumn:hover {
+    background: var(--bg-light);
+    transform: translateY(-4px);
+}
+
+.contactColumn i {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.contactColumn:hover i {
+    transform: scale(1.1);
+}
+
+.contactColumn h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 1rem 0 0.5rem;
+}
+
+.contactColumn p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* ========================================
+   RESPONSIVE - Mobile & Tablet
+======================================== */
+@media (max-width: 991px) {
+    #about h2,
+    #skills h2,
+    #portfolio h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+    
+    .skillsText.card {
+        height: auto;
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .bgimage {
+        height: 70vh;
+    }
+}
