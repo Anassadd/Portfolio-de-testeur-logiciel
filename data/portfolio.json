@@ -1,20 +1,38 @@
 [
     {
-        "image": "image1.png",
+        "image": "booki.png",
         "title": "Booki",
         "text": "Site permettant de rechercher et réserver des hébergements dans différentes villes.Projet réalisé en HTML/CSS avec une mise en page responsive.",
         "link": "https://anassadd.github.io/booki/"
     },
     {
-        "image": "image2.png",
+        "image": "Riding-Citites.png",
         "title": "site-Riding-Citites",
         "text": "Application qui met en avant les cités et lieux emblématiques à travers une interface moderne. Développement centré sur l'intégration et l’optimisation.",
         "link": "https://anassadd.github.io/site-Riding-Citites/"
     },
     {
-        "image": "image3.png",
+        "image": "kasa.png",
         "title": "Kasa",
         "text": "Plateforme de location d’appartements entièrement développée en React. Gestion des composants, du routing, et du responsive design.",
-        "link": "https://anassadd.github.io/kasa/"
+        "link": "https://github.com/Anassadd/kasa"
+    },
+    {
+        "image": "eco-bliss-bath.jpg",
+        "title": "Eco Bliss Bath",
+        "text": "Site e-commerce dédié aux produits de bien-être. Intégration de l'interface utilisateur et gestion de la navigation pour une expérience client fluide.",
+        "link": "https://github.com/Anassadd/Eco-Bliss-Bath"
+    },
+    {
+        "image": "sophie.jpg",
+        "title": "Sophie Bluel",
+        "text": "Création d'une page web dynamique pour une architecte d'intérieur. Gestion des appels API et système de connexion admin.",
+        "link": "https://github.com/Anassadd/Portfolio-architecte-sophie-bluel"
+    },
+    {
+        "image": "strategie-de-test.png",
+        "title": "Concevez une stratégie de test",
+        "text": "Conception et élaboration d'une stratégie de test complète pour une application bancaire. Inclusion des scénarios critiques, des plans d'automatisation.",
+        "link": "Documents/Stratégie-de-test.pdf"
     }
 ]
