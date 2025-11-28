@@ -2,46 +2,55 @@
     {
         "image": "html-css.jpg",
         "title": "HTML - CSS",
-        "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"
+        "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS",
+        "alt":  "logo html css"
     },
     {
         "image": "js.jpg",
         "title": "javascript",
-        "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"
+        "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires",
+         "alt":  "logo javascript"
     },
     {
         "image": "react.jpg",
         "title": "React",
-        "text": "Création d’applications React, création de composants et manipulation de leur état"
+        "text": "Création d’applications React, création de composants et manipulation de leur état",
+         "alt":  "logo react"
     },
     {
         "image": "gestion-de-projet.png",
         "title": "Gestion de projet",
-        "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet"
+        "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet",
+         "alt":  "logo gestion de projet"
     },
     {
         "image": "optimisation-et-debug.png",
         "title": "Optimisation et debug",
-        "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne"
+        "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne",
+         "alt":  "logo optimisation et debug"
     },
     {
         "image": "test.png",
         "title": "Test",
-        "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
+        "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API",
+         "alt":  "logo test"
     },
     {
         "image": "Methodologie-Agile.png",
         "title": "Méthodologie Agile (Scrum/Kanban)",
-        "text": "Maîtrise des cycles de développement courts (Sprints) et des rituels Agile (Daily Scrum, Planning, Rétrospective). Capacité à estimer la charge de travail et à gérer la vélocité d'équipe."
+        "text": "Maîtrise des cycles de développement courts (Sprints) et des rituels Agile (Daily Scrum, Planning, Rétrospective). Capacité à estimer la charge de travail et à gérer la vélocité d'équipe.",
+         "alt":  "logo methodologie"
     },
     {
         "image": "Controle-de-version.png",
         "title": "Contrôle de version (Git/GitHub)",
-        "text": "Maîtrise des workflows Git (branches, merge, rebase). Utilisation des plateformes comme GitHub pour la collaboration, la revue de code et la gestion des dépôts."
+        "text": "Maîtrise des workflows Git (branches, merge, rebase). Utilisation des plateformes comme GitHub pour la collaboration, la revue de code et la gestion des dépôts.",
+         "alt":  "logo github"
     },
     {
         "image": "Documentation-Technique.png",
         "title": "Documentation Technique",
-        "text": "Rédaction claire et structurée de la documentation utilisateur et technique (ex. : cahiers de recette, fiches d'anomalies). Utilisation d'outils comme Swagger/OpenAPI pour documenter les spécifications des API"
+        "text": "Rédaction claire et structurée de la documentation utilisateur et technique (ex. : cahiers de recette, fiches d'anomalies). Utilisation d'outils comme Swagger/OpenAPI pour documenter les spécifications des API",
+         "alt":  "logo documentation technique"
     }
 ]
