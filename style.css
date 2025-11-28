@@ -112,37 +112,58 @@ h2::after {
    ABOUT
 ======================================== */
 
+#about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Image ronde */
 .imageAboutPage {
   width: 300px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transform: translateY(-60px);
+}
 
+/* Paragraphes */
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Listes d'informations */
+.info-list-container {
+  max-width: 700px; 
+  margin: 20px auto 0 auto; /* CENTRE AUTOMATIQUEMENT */
+  text-align: left ;    
+}
+.info-list-container.col-6{
+  justify-content: center;
 }
 
 #about ul {
   padding-left: 0;
-  margin-bottom: 0;
 }
 
 #about li {
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   font-size: 1.05rem;
+  color: #333;
 }
 
 #about strong {
-  color: var(--text-dark); 
   font-weight: 700;
-  display: inline-block;
-  min-width: 60px;
-}
-
-.info-list-container {
-   width: 100%;
-   max-width: 300px; 
-   text-align: left;
+  color: #000;
 }
 
 /* ========================================
@@ -154,7 +175,7 @@ h2::after {
   box-shadow: var(--shadow);
   text-align: center;
   transition: 0.3s;
-  height: 100%; /* Prend toute la hauteur disponible */
+  height: 100%; 
   min-height: 320px;
 }
 
@@ -178,11 +199,9 @@ h2::after {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: 0.3s;
-  
-  /* C'est ICI le secret pour la même taille : */
-  height: 100%; /* La carte prend toute la hauteur de la colonne */
-  display: flex; /* Active le mode flexible */
-  flex-direction: column; /* Aligne les éléments de haut en bas */
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
 }
 
 .portfolioContent:hover {
@@ -193,15 +212,15 @@ h2::after {
 .portfolioContent img {
   height: 200px;
   width: 100%;
-  object-fit: cover; /* L'image ne sera pas déformée */
+  object-fit: cover; 
 }
 
-/* La partie qui contient le texte et le bouton */
+
 .card-body {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Cette partie grandit pour remplir le vide */
+  flex-grow: 1; 
 }
 
 .card-title {
@@ -259,3 +278,72 @@ h2::after {
 }
 
 
+/* ========================================
+   RESPONSIVITÉ MOBILE (Max 768px)
+======================================== */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero_title {
+       font-size: 2.5rem;
+    }
+
+    .hero_desc {
+       font-size: 1.1rem;
+    }
+
+    /* --- ABOUT (À propos) --- */
+    .imageAboutPage {
+        margin-bottom: 2rem;
+    }
+
+    
+    .col-lg-4.d-flex.flex-column.align-items-center {
+        align-items: flex-start !important; 
+        margin-bottom: 2rem;
+    }
+
+    
+    .info-list-container {
+        max-width: 100%;
+    }
+
+   
+
+    .skillsText,
+    .portfolioContent {
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .skillsText {
+        min-height: auto;
+    }
+
+
+    /* --- CONTACT --- */
+    .contactColumn {
+       transform: none !important;
+    }
+
+    .contactColumn:hover {
+        background: none;
+        transform: none;
+    }
+}
+
+/* ========================================
+   RESPONSIVITÉ POUR TRÈS PETITS ÉCRANS (Max 576px)
+======================================== */
+@media (max-width: 576px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+}
