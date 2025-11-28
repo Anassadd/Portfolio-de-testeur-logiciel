@@ -1,13 +1,13 @@
 [
     {
-        "image": "booki.png",
+        "image": "booki.jpg",
         "title": "Booki",
         "text": "Site permettant de rechercher et réserver des hébergements dans différentes villes.Projet réalisé en HTML/CSS avec une mise en page responsive.",
         "link": "https://anassadd.github.io/booki/",
          "alt":  "Interface du site de réservation booki"
     },
     {
-        "image": "Riding-Citites.png",
+        "image": "Riding-Citites.jpg",
         "title": "site-Riding-Citites",
         "text": "Application qui met en avant les cités et lieux emblématiques à travers une interface moderne. Développement centré sur l'intégration et l’optimisation.",
         "link": "https://anassadd.github.io/site-Riding-Citites/",
@@ -35,7 +35,7 @@
          "alt":  "image sophie bluel"
     },
     {
-        "image": "strategie-de-test.png",
+        "image": "strategie-de-test.jpg",
         "title": "Concevez une stratégie de test",
         "text": "Conception et élaboration d'une stratégie de test complète pour une application bancaire. Inclusion des scénarios critiques, des plans d'automatisation.",
         "link": "Documents/Stratégie-de-test.pdf",

@@ -36,19 +36,19 @@
          "alt":  "logo test"
     },
     {
-        "image": "Methodologie-Agile.png",
+        "image": "Methodologie-Agile.jpg",
         "title": "Méthodologie Agile (Scrum/Kanban)",
         "text": "Maîtrise des cycles de développement courts (Sprints) et des rituels Agile (Daily Scrum, Planning, Rétrospective). Capacité à estimer la charge de travail et à gérer la vélocité d'équipe.",
          "alt":  "logo methodologie"
     },
     {
-        "image": "Controle-de-version.png",
+        "image": "Controle-de-version.jpg",
         "title": "Contrôle de version (Git/GitHub)",
         "text": "Maîtrise des workflows Git (branches, merge, rebase). Utilisation des plateformes comme GitHub pour la collaboration, la revue de code et la gestion des dépôts.",
          "alt":  "logo github"
     },
     {
-        "image": "Documentation-Technique.png",
+        "image": "Documentation-Technique.jpg",
         "title": "Documentation Technique",
         "text": "Rédaction claire et structurée de la documentation utilisateur et technique (ex. : cahiers de recette, fiches d'anomalies). Utilisation d'outils comme Swagger/OpenAPI pour documenter les spécifications des API",
          "alt":  "logo documentation technique"
