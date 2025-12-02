@@ -79,7 +79,7 @@ h2::after {
 ======================================== */
 .bgimage {
   height: 100vh;
-  background: url("images/fondhead.jpg") center/cover no-repeat;
+  background: url("images/fondhead.webp") center/cover no-repeat;
   position: relative;
 }
 

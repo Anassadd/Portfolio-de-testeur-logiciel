@@ -1,41 +1,41 @@
 [
     {
-        "image": "booki.jpg",
+        "image": "booki.webp",
         "title": "Booki",
         "text": "Site permettant de rechercher et réserver des hébergements dans différentes villes.Projet réalisé en HTML/CSS avec une mise en page responsive.",
         "link": "https://anassadd.github.io/booki/",
          "alt":  "Interface du site de réservation booki"
     },
     {
-        "image": "Riding-Citites.jpg",
+        "image": "Riding-Citites.webp",
         "title": "site-Riding-Citites",
         "text": "Application qui met en avant les cités et lieux emblématiques à travers une interface moderne. Développement centré sur l'intégration et l’optimisation.",
         "link": "https://anassadd.github.io/site-Riding-Citites/",
          "alt":  "Interface du site web Riding Cities."
     },
     {
-        "image": "kasa.png",
+        "image": "kasa.webp",
         "title": "Kasa",
         "text": "Plateforme de location d’appartements entièrement développée en React. Gestion des composants, du routing, et du responsive design.",
         "link": "https://github.com/Anassadd/kasa",
          "alt":  "Interface du site web de location Kasa."
     },
     {
-        "image": "eco-bliss-bath.jpg",
+        "image": "eco-bliss-bath.webp",
         "title": "Eco Bliss Bath",
         "text": "Automatisation des tests End-to-End (E2E) et de l'API pour garantir la fiabilité de l'application front-end et des services back-end.",
         "link": "https://github.com/Anassadd/Eco-Bliss-Bath/tree/master/frontend/cypress/e2e",
          "alt":  "Capture d'écran de la page d'accueil du site eco bliss bath."
     },
     {
-        "image": "sophie.jpg",
+        "image": "sophie.webp",
         "title": "Sophie Bluel",
         "text": "Création d'une page web dynamique pour une architecte d'intérieur. Gestion des appels API et système de connexion admin.",
         "link": "https://github.com/Anassadd/Portfolio-architecte-sophie-bluel",
          "alt":  "image sophie bluel"
     },
     {
-        "image": "strategie-de-test.jpg",
+        "image": "strategie-de-test.webp",
         "title": "Concevez une stratégie de test",
         "text": "Conception et élaboration d'une stratégie de test complète pour une application bancaire. Inclusion des scénarios critiques, des plans d'automatisation.",
         "link": "Documents/Stratégie-de-test.pdf",

@@ -1,54 +1,54 @@
 [
     {
-        "image": "html-css.jpg",
+        "image": "html-css.webp",
         "title": "HTML - CSS",
         "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS",
         "alt":  "logo html css"
     },
     {
-        "image": "js.jpg",
+        "image": "js.webp",
         "title": "javascript",
         "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires",
          "alt":  "logo javascript"
     },
     {
-        "image": "react.jpg",
+        "image": "react.webp",
         "title": "React",
         "text": "Création d’applications React, création de composants et manipulation de leur état",
          "alt":  "logo react"
     },
     {
-        "image": "gestion-de-projet.png",
+        "image": "gestion-de-projet.webp",
         "title": "Gestion de projet",
         "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet",
          "alt":  "logo gestion de projet"
     },
     {
-        "image": "optimisation-et-debug.png",
+        "image": "optimisation-et-debug.webp",
         "title": "Optimisation et debug",
         "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne",
          "alt":  "logo optimisation et debug"
     },
     {
-        "image": "test.png",
+        "image": "test.webp",
         "title": "Test",
         "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API",
          "alt":  "logo test"
     },
     {
-        "image": "Methodologie-Agile.jpg",
+        "image": "Methodologie-Agile.webp",
         "title": "Méthodologie Agile (Scrum/Kanban)",
         "text": "Maîtrise des cycles de développement courts (Sprints) et des rituels Agile (Daily Scrum, Planning, Rétrospective). Capacité à estimer la charge de travail et à gérer la vélocité d'équipe.",
          "alt":  "logo methodologie"
     },
     {
-        "image": "Controle-de-version.jpg",
+        "image": "Controle-de-version.webp",
         "title": "Contrôle de version (Git/GitHub)",
         "text": "Maîtrise des workflows Git (branches, merge, rebase). Utilisation des plateformes comme GitHub pour la collaboration, la revue de code et la gestion des dépôts.",
          "alt":  "logo github"
     },
     {
-        "image": "Documentation-Technique.jpg",
+        "image": "Documentation-Technique.webp",
         "title": "Documentation Technique",
         "text": "Rédaction claire et structurée de la documentation utilisateur et technique (ex. : cahiers de recette, fiches d'anomalies). Utilisation d'outils comme Swagger/OpenAPI pour documenter les spécifications des API",
          "alt":  "logo documentation technique"
